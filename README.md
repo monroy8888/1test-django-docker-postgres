@@ -1,14 +1,15 @@
 # 1test-django-docker-postgres
 Create Frame work django with postgres in containers from docker
 
-install:
-pip install psycopg2
+Run:
+docker build .
 
 Run:
-docker volume create db_data
+docker-compose build
 
 Run:
-docker-compose run web django-admin.py startproject django_environments
+//To create the framework on django
+docker-compose run app sh -c "django-admin.py startproject app ."
 
 Run:
 docker-compose up -d
