@@ -18,4 +18,4 @@ Run:
 docker-compose down
 
 Run:
-docker-compose logs web
+docker-compose logs app
